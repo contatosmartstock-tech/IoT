@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT na Sustentabilidade Ambiental</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-leaf"></i>
+                <span>IoT Sustentável</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#sensors" class="nav-link">Sensores</a></li>
+                <li><a href="#monitoring" class="nav-link">Monitoramento</a></li>
+                <li><a href="#simulation" class="nav-link">Simulação</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="highlight">IoT</span> para um
+                <span class="highlight">Futuro Sustentável</span>
+            </h1>
+            <p class="hero-description">
+                Descubra como a Internet das Coisas está revolucionando a sustentabilidade ambiental
+                através de monitoramento inteligente, otimização de recursos e proteção do meio ambiente.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('#about')">
+                    <i class="fas fa-play"></i>
+                    Explorar Agora
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('#simulation')">
+                    <i class="fas fa-cogs"></i>
+                    Simular Sensores
+                </button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-icons">
+                <div class="icon-item" data-delay="0">
+                    <i class="fas fa-thermometer-half"></i>
+                </div>
+                <div class="icon-item" data-delay="1">
+                    <i class="fas fa-tint"></i>
+                </div>
+                <div class="icon-item" data-delay="2">
+                    <i class="fas fa-wind"></i>
+                </div>
+                <div class="icon-item" data-delay="3">
+                    <i class="fas fa-sun"></i>
+                </div>
+                <div class="icon-item" data-delay="4">
+                    <i class="fas fa-seedling"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">O que é IoT Sustentável?</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Conectividade Inteligente</h3>
+                    <p>Dispositivos IoT conectados coletam dados ambientais em tempo real, permitindo monitoramento contínuo e preciso.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Análise de Dados</h3>
+                    <p>Algoritmos avançados processam grandes volumes de dados para identificar padrões e tendências ambientais.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Automação Inteligente</h3>
+                    <p>Sistemas automatizados respondem automaticamente às mudanças ambientais, otimizando o uso de recursos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sensors Section -->
+    <section id="sensors" class="sensors">
+        <div class="container">
+            <h2 class="section-title">Sensores Ambientais IoT</h2>
+            <div class="sensors-grid">
+                <div class="sensor-card" data-sensor="temperature">
+                    <div class="sensor-header">
+                        <i class="fas fa-thermometer-half"></i>
+                        <h3>Sensor de Temperatura</h3>
+                    </div>
+                    <div class="sensor-content">
+                        <div class="sensor-value">
+                            <span class="value">24.5°C</span>
+                            <span class="status good">Normal</span>
+                        </div>
+                        <p>Monitora mudanças de temperatura para detectar variações climáticas e otimizar sistemas de climatização.</p>
+                        <div class="sensor-features">
+                            <span class="feature">Precisão: ±0.1°C</span>
+                            <span class="feature">Alcance: -40°C a 85°C</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sensor-card" data-sensor="humidity">
+                    <div class="sensor-header">
+                        <i class="fas fa-tint"></i>
+                        <h3>Sensor de Umidade</h3>
+                    </div>
+                    <div class="sensor-content">
+                        <div class="sensor-value">
+                            <span class="value">65%</span>
+                            <span class="status good">Ideal</span>
+                        </div>
+                        <p>Controla níveis de umidade para prevenir mofo, otimizar irrigação e manter condições ideais.</p>
+                        <div class="sensor-features">
+                            <span class="feature">Precisão: ±2%</span>
+                            <span class="feature">Alcance: 0-100%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sensor-card" data-sensor="air-quality">
+                    <div class="sensor-header">
+                        <i class="fas fa-wind"></i>
+                        <h3>Qualidade do Ar</h3>
+                    </div>
+                    <div class="sensor-content">
+                        <div class="sensor-value">
+                            <span class="value">85 AQI</span>
+                            <span class="status moderate">Moderado</span>
+                        </div>
+                        <p>Detecta poluentes atmosféricos como CO2, NO2, PM2.5 para alertas de saúde pública.</p>
+                        <div class="sensor-features">
+                            <span class="feature">Multi-poluto</span>
+                            <span class="feature">Tempo real</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sensor-card" data-sensor="soil">
+                    <div class="sensor-header">
+                        <i class="fas fa-seedling"></i>
+                        <h3>Sensor de Solo</h3>
+                    </div>
+                    <div class="sensor-content">
+                        <div class="sensor-value">
+                            <span class="value">pH 6.8</span>
+                            <span class="status good">Saudável</span>
+                        </div>
+                        <p>Analisa pH, umidade e nutrientes do solo para agricultura de precisão e conservação.</p>
+                        <div class="sensor-features">
+                            <span class="feature">pH + Umidade</span>
+                            <span class="feature">Nutrientes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monitoring Section -->
+    <section id="monitoring" class="monitoring">
+        <div class="container">
+            <h2 class="section-title">Monitoramento em Tempo Real</h2>
+            <div class="monitoring-dashboard">
+                <div class="dashboard-header">
+                    <h3>Dashboard Ambiental</h3>
+                    <div class="time-display" id="currentTime"></div>
+                </div>
+                <div class="charts-container">
+                    <div class="chart-card">
+                        <h4>Temperatura (24h)</h4>
+                        <canvas id="temperatureChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h4>Qualidade do Ar</h4>
+                        <canvas id="airQualityChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h4>Uso de Energia</h4>
+                        <canvas id="energyChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simulation Section -->
+    <section id="simulation" class="simulation">
+        <div class="container">
+            <h2 class="section-title">Simulador de Sensores IoT</h2>
+            <div class="simulation-controls">
+                <button class="btn btn-primary" id="startSimulation">
+                    <i class="fas fa-play"></i>
+                    Iniciar Simulação
+                </button>
+                <button class="btn btn-secondary" id="stopSimulation">
+                    <i class="fas fa-stop"></i>
+                    Parar Simulação
+                </button>
+                <button class="btn btn-outline" id="resetSimulation">
+                    <i class="fas fa-refresh"></i>
+                    Resetar
+                </button>
+            </div>
+            <div class="simulation-dashboard">
+                <div class="sim-sensor" id="simTemp">
+                    <div class="sim-sensor-icon">
+                        <i class="fas fa-thermometer-half"></i>
+                    </div>
+                    <div class="sim-sensor-data">
+                        <h4>Temperatura</h4>
+                        <div class="sim-value" id="simTempValue">--°C</div>
+                        <div class="sim-graph" id="simTempGraph"></div>
+                    </div>
+                </div>
+                <div class="sim-sensor" id="simHumidity">
+                    <div class="sim-sensor-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="sim-sensor-data">
+                        <h4>Umidade</h4>
+                        <div class="sim-value" id="simHumidityValue">--%</div>
+                        <div class="sim-graph" id="simHumidityGraph"></div>
+                    </div>
+                </div>
+                <div class="sim-sensor" id="simAir">
+                    <div class="sim-sensor-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <div class="sim-sensor-data">
+                        <h4>Qualidade do Ar</h4>
+                        <div class="sim-value" id="simAirValue">-- AQI</div>
+                        <div class="sim-graph" id="simAirGraph"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>IoT Sustentável</h3>
+                    <p>Conectando tecnologia e meio ambiente para um futuro mais sustentável.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="#about">Sobre IoT</a></li>
+                        <li><a href="#sensors">Sensores</a></li>
+                        <li><a href="#monitoring">Monitoramento</a></li>
+                        <li><a href="#simulation">Simulação</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Desenvolvido para demonstrar o potencial da IoT na sustentabilidade ambiental.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 IoT Sustentável. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,1 +1,1 @@
-Pedro: subi o site para geração de qr code e criação do folheto de publicação
+caio: subi a pesquisa sobre ioT na sustentabilidade do meio ambiente 
